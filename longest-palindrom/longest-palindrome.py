@@ -1,4 +1,12 @@
 class Solution:
+    '''
+        oddCount is a variable which tracks the number of odd values. 
+        We are checking in each iteration if the current mapping value is odd 
+        or even and update this counter based on this. All even values 
+        contribute nothing to this counter but odd values do.
+        Interestingly, the pattern is this:
+        Longest Palindrome = length of string - odd count (total number of odd values) + 1
+    '''
     def longestPalindrome(self, s: str) -> int:
         oddCount = 0
         char_map = {}
